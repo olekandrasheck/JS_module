@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      p {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+      }
+      #my-app {
+        width: 500px;
+        height: 700px;
+        margin: 0 auto;
+        background-color: rgb(58 124 166);
+        align-content: center;
+      }
+      #container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 46%;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      h1 {
+        width: 300px;
+        color: rgb(232 230 50);
+        margin: 0 auto;
+        padding-top: 30px;
+        font-size: 50px;
+        font-weight: 400;
+        font-family: "Bebas Neue";
+        text-align: center;
+      }
+      h2 {
+        font-size: 40px;
+        font-weight: 400;
+        font-family: "Bebas Neue";
+        text-align: center;
+        color: rgb(244 244 244);
+        margin: 0;
+      }
+      h3 {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: "Bebas Neue";
+        text-align: center;
+        color: rgb(232 230 50);
+        padding-top: 10px;
+        margin: 0;
+      }
+      #btn {
+        background-color: rgb(235 197 35);
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 60px;
+        font-family: "Bebas Neue";
+        color: rgb(244 244 244);
+        font-size: 35px;
+      }
+      #eng-container,
+      #esp-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        justify-content: space-around;
+      }
+      #eng-container {
+        align-items: flex-end;
+      }
+      .word {
+        background-color: rgb(244 244 244);
+        color: rgb(6 51 80);
+        font-family: "Bebas Neue";
+        font-size: 20px;
+        font-weight: 00;
+        border: 1px solid rgb(244 244 244);
+        border-radius: 60px;
+        width: 200px;
+        line-height: 9px;
+        text-align: center;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+      .selected {
+        background-color: yellow;
+      }
+      .matched {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="my-app">
+      <h1>
+        YOUR SCORE:
+        <p id="score-counter">0</p>
+      </h1>
+      <h2>MATCH IT!</h2>
+      <div id="container">
+        <div id="eng-container"></div>
+        <div id="esp-container"></div>
+      </div>
+      <button id="btn">START</button>
+      <h3>
+        YOUR TIME:
+        <p id="time-counter"></p>
+      </h3>
+      <h3>
+        ROUND:
+        <p id="round-counter"></p>
+      </h3>
+    </div>
+  </body>
+  <script src="myjs.js"></script>
+</html>
