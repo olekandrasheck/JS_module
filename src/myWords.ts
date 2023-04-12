@@ -63,7 +63,7 @@ export const myWords: ImyWords[] = [
   { id: 56, eng: "grandson", esp: "nieto" },
   { id: 57, eng: "aunt", esp: "tía" },
   { id: 58, eng: "uncle", esp: "tío" },
-  { id: 59, eng: "cousin", esp: "primo" },
+  { id: 59, eng: "tree", esp: "árbol" },
   { id: 60, eng: "children", esp: "niños" },
   { id: 61, eng: "brother", esp: "hermano" },
   { id: 62, eng: "husband", esp: "marido" },
