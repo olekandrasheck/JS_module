@@ -1,0 +1,57 @@
+{
+  "name": "module2",
+  "version": "1.0.0",
+  "description": "js module",
+  "main": "myjs.ts",
+  "dependencies": {
+    "esbuild": "^0.17.16",
+    "function-bind": "^1.1.1",
+    "has": "^1.0.3",
+    "is-core-module": "^2.12.0",
+    "nanoid": "^3.3.6",
+    "path-parse": "^1.0.7",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.21",
+    "resolve": "^1.22.2",
+    "rollup": "^3.20.2",
+    "source-map-js": "^1.0.2",
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard-scss": "^8.0.0",
+    "supports-preserve-symlinks-flag": "^1.0.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.1"
+  },
+  "scripts": {
+    "test": "test",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix --ext .ts src/",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "stylelint": "stylelint \"**/*.scss\"",
+    "stylelint:fix": "stylelint --fix \"**/*.scss\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olekandrasheck/JS_module.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olekandrasheck/JS_module/issues"
+  },
+  "homepage": "https://github.com/olekandrasheck/JS_module#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.7",
+    "sass": "^1.61.0",
+    "vite-plugin-checker": "^0.5.6"
+  }
+}
